@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primer-color:#ffffff;
+    --tercer-color: #010712;
+    --segundo-color: #161616;
+    --cuarto-color: #a8a8a8;
+
+    --blanco: #fff;
+    --negro: #000;
+}
+
+
+body{
+    background-color: #f2f2f2;
+    font-family: 'Abel', sans-serif;
+}
+    
+
+
+html{
+    scroll-behavior: smooth;
+}
+h1[id]{
+    scroll-margin-top: 10px;
+  }
+
+
+
+/* BARRA LATERAL DE SCROLL ESTILO ---------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    height: 40px;
+    background-color: var(--primer-color);
+}
+
+
+/* Navegador de Pagina Con Efecto de Scroll -----------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 10px 20px;
+    z-index: 10;
+}
+
+header .Logo{
+    position: relative;
+    width: 400px;
+    height: 180px;
+    transition: 1.5s;
+   
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+
+}
+
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 15px;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: all 0.3s ease ;
+}
+
+header ul li a:hover{
+    border-bottom: 2px solid var(--primer-color);
+    padding-bottom: 3px;
+}
+
+/* Header.Abajo ------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+header.Abajo{
+    background-color: var(--blanco);
+    padding: 4px 20px;
+}
+
+header.Abajo .Logo{
+    position: relative;
+    width: 100px;
+    height: 50px;
+}
+
+header.Abajo ul li a{
+    font-size: 15px;
+    color: var(--negro);
+}
+
+header.Abajo ul li a:hover{
+    border-bottom: 2px solid var(--primer-color);
+    padding-bottom: 3px;
+}
+
+/* Secciones ------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+/* Imagen Principal ------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+.imagenFondo{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url(IMG/2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Secciones GRID ------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+.Titulo {
+    display: flex;
+    margin: 40px;
+    justify-content: center;
+    letter-spacing: 4px;
+    text-align: center;
+}
+.botones-registro{
+    width: 700px;
+    margin: -30px auto 50px;
+    text-align: center;
+}
+.registro{
+    background-color: var(--primer-color);
+    color: var(--blanco);
+    border-radius: 30px;
+    border: 2px solid var(--blanco);
+    width: 150px;
+    height: 50px;
+    margin: 10px 0 0 0;
+    transition: all .7s ease;
+}
+
+.registro:hover{
+    background-color: transparent;
+    border: 2px solid var(--negro);
+    color: var(--negro);
+}
+
+
+
+/* Quienes Somos ------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+.quienesSomos{
+    width: 70%;
+    height: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    text-align: center;
+}
+
+.tarjetaPresentacion{
+    background-color: var(--blanco);
+    box-shadow: 0 0 10px var(--cuarto-color);
+}
+.tarjeta__img{
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+.tarjeta__contenido h3{
+    margin: 40px 0 0 0;
+
+}
+.pau{
+    background-image: url(IMG/PAU.jpeg);
+}
+
+.karo{
+    background-image: url(IMG/KARO.jpeg);
+}
+
+
+
+/* UNIDADES------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+.unidades{
+    width: 70%;
+    height: 200px;
+    margin: 30px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    text-align:center;
+}
+
+.porcino{
+    background-image: url(IMG/porcino.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.conejo{
+    background-image: url(IMG/conejo.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.apicultura{
+        background-image: url(IMG/abeja.jpg);
+        background-position: center;
+        background-size: contain;  
+        background-repeat: no-repeat;
+    }
+    .unidades__texto{
+        margin: 35% 30px 0 20px;
+    }
+    .texto-titulo{
+        font-size: 30px;
+        margin: 0 0 60px 0;
+        color: #303030;
+    }
+    .unidades__texto p{
+        font-size: 20px;
+    }
+    .unidades__texto button{
+        margin: 80px 0 ;
+    }
+    
+
+
+.vermas{
+    
+    background-color: var(--primer-color);
+    color: var(--negro);
+    border-radius: 30px;
+    border: 2px solid var(--negro);
+    width: 150px;
+    height: 50px;
+    margin: 10px 0 0 0;
+    transition: all .7s ease;
+}
+
+.vermas:hover{
+    background-color: transparent;
+    border: 2px solid var(--blanco);
+    color: var(--blanco);
+}
+
+
+/* Footer ------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+footer{
+    background-color: #b9e587;
+    margin: 10% 0 0 0;
+    padding: 1em 0;
+    text-align: center;
+    display: grid;
+    position: center;
+    bottom: 0;
+    width: 100%;
+    height: 20vh;
+    color: var(--negro);
+    gap: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer .Parte1 img{
+    margin: 10% 0 0 0;
+    width: 200px;
+    height: 100px;
+}
+
+
+
+
+
+/* Footer Parate 3 ------------------------------------------------*/
+
+footer .Parte3{
+    padding: 6% 0;
+ }
+ 
+ footer .Parte3 h3{
+     margin: 2% 0 0 0;
+     letter-spacing: 2px;
+     position: center;
+ }
+ footer .Parte3 ul{
+     display: contents;
+     grid-template-rows: 1fr 1fr 1fr;
+     position: center;
+     align-content: center;
+  }
+  
+ footer .Parte3 ul li{
+    gap: 2%;
+     list-style: none;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 10px 0 0 0;
+ }
+ footer .Parte3 ul li i{
+    color: var(--titulos-color);
+    font-size: 20px;
+}
+
+
+ 
+
+

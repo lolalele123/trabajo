@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENA | REGISTRARSE</title>
+    <link rel="stylesheet" href="estilosRegistro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="icon" href="IMG/1.png">
+</head>
+<body>
+<div class="contact-container">
+    <div class="left-col"></div>
+
+    <div class="right-col">
+
+            <div class="theme-switch-wrapper"></div>
+        <div class="titulo">
+        <img src="../IMG/sena.jpg" alt="">
+          <h1>REGISTRARSE</h1>
+        </div>
+       
+          
+        <form id="contact-form" method="post" action="registroPHP.php">
+
+            <label for="name">NOMBRE</label>
+        <input type="text" name="Nombre" required>
+
+            <label for="name">APELLIDO</label>
+        <input type="text" name="Apellido" required>
+
+            <label for="email">CORREO</label>
+        <input type="email" name="Correo" required>
+
+            <label for="password">CONTRASEÑA</label>
+        <input type="password" name="Contrasena" required>
+
+            <button type="submit" id="submit" name="submit">ENVIAR</button>
+            <button type="submit" id="submit" name="submit" onclick="location.href='inicioSesion.html'"> INICIO SESION</button>
+            <button type="submit" id="submit" name="submit" onclick="location.href='../index.html'"> VOLVER</button>
+
+        </form>
+
+    </div>
+</div>
+</body>
+</html>
